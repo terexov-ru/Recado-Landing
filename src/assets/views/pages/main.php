@@ -23,11 +23,13 @@
                 <div class="main-banner__info">
                     <h1>Помогаем ресторанам зарабатывать больше</h1>
                     <h4>Быстрый и удобный сайт для доставки и самовывоза, который увеличивает выручку до 50%</h4>
-                    <a class="main-banner__launch" href="#">Запустить бесплатно</a>
+                    <img class="main-banner__info__img" src="resourses/main.png" alt="main image">
+                    <a class="main-banner__launch" href="#feedback">Запустить бесплатно</a>
                     <a class="main-banner__demo" href="#">Посмотреть демо</a>
                 </div>
+                <img class="main-banner__img" src="resourses/main.png" alt="main image">
             </section>
-            <section class="advantages">
+            <section class="advantages" id="advantages">
                 <h2>С rekado вы сможете</h2>
                 <div class="advantages__container">
                     <div class="advantages-item">
@@ -48,7 +50,7 @@
                     </div>
                 </div>
             </section>
-            <section class="partners">
+            <section class="partners" id="partners">
                 <div class="partner-item">
                     <img src="resourses/iiko.png" alt="partner">
                 </div>
@@ -72,15 +74,15 @@
                 </div>
             </section>
             <section class="feedback-form">
-                <form class="feedback-form__form">
+                <form class="feedback-form__form validate-form">
                     <h2 class="feedback-form__header">Нет вашей учетной системы?</h2>
                     <p class="feedback-form__text">Отправьте заявку и мы поможем решить этот вопрос</p>
                     <div class="feedback-form__wrapper">
                         <div class="feedback-form__input input-container">
-                            <input class="validate-input telephone-input" data-type="telephone" type="text" placeholder="+7">
+                            <input class="validate-input telephone-input" data-type="telephone" name="telephone" type="text" placeholder="+7">
                         </div>
                         <div class="feedback-form__input input-container">
-                            <input class="validate-input" data-type="text" type="text" placeholder="Введите имя">
+                            <input class="validate-input" data-type="text" type="text" name="name" placeholder="Введите имя">
                         </div>
                         <button type="button" class="feedback-form__btn validate-form-btn">Оставить заявку</button>
                         <p class="feedback-form__subtext">Нажимая на кнопку “Оставить заявку”, я даю согласие <a href="#">на обработку персональных данных</a></p>
@@ -88,7 +90,7 @@
                 </form>
                 <img class="feedback-form__img" src="resourses/feedback.png" alt="feedback">
             </section>
-            <section class="options">
+            <section class="options" id="options">
                 <h2>Кому подойдет rekado</h2>
                 <div class="options__scroll-container">
                     <div class="options__container">
@@ -121,14 +123,14 @@
                     <!-- <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
                     </div> -->
             </section>
-            <section class="rates">
+            <section class="rates" id="rates">
                 <h2 class="rates__header">Тарифы</h2>
                 <div class="rates__container">
                     <div class="rate-item">
                         <h5 class="rate-item__name">Start</h5>
                         <p class="rate-item__price">3900 ₽</p>
                         <p class="rate-item__part">и 3,5% с заказа</p>
-                        <a class="rate-item__btn" href="#">Подключить <span>сейчас</span></a>
+                        <a class="rate-item__btn" href="#feedback">Подключить <span>сейчас</span></a>
                         <div class="rate-item__advantage">
                             <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M12 21.2117C16.9706 21.2117 21 17.1822 21 12.2117C21 7.24111 16.9706 3.21167 12 3.21167C7.02944 3.21167 3 7.24111 3 12.2117C3 17.1822 7.02944 21.2117 12 21.2117Z" stroke="#14181F" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
@@ -162,7 +164,7 @@
                         <h5 class="rate-item__name">Optimum <span>популярный</span></h5>
                         <p class="rate-item__price">49 900 ₽</p>
                         <p class="rate-item__part">и 1,5% с заказа</p>
-                        <a class="rate-item__btn" href="#">Подключить <span>сейчас</span></a>
+                        <a class="rate-item__btn" href="#feedback">Подключить <span>сейчас</span></a>
                         <div class="rate-item__advantage">
                             <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M12 21.2117C16.9706 21.2117 21 17.1822 21 12.2117C21 7.24111 16.9706 3.21167 12 3.21167C7.02944 3.21167 3 7.24111 3 12.2117C3 17.1822 7.02944 21.2117 12 21.2117Z" stroke="#14181F" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
@@ -196,7 +198,7 @@
                         <h5 class="rate-item__name">Premium</h5>
                         <p class="rate-item__price">Индивидуально</p>
                         <p class="rate-item__part">и от 0,7% с заказа</p>
-                        <a class="rate-item__btn" href="#">Подключить <span>сейчас</span></a>
+                        <a class="rate-item__btn" href="#feedback">Подключить <span>сейчас</span></a>
                         <div class="rate-item__advantage">
                             <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M12 21.2117C16.9706 21.2117 21 17.1822 21 12.2117C21 7.24111 16.9706 3.21167 12 3.21167C7.02944 3.21167 3 7.24111 3 12.2117C3 17.1822 7.02944 21.2117 12 21.2117Z" stroke="#14181F" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
@@ -228,7 +230,7 @@
                     </div>
                 </div>
             </section>
-            <section class="work">
+            <section class="work" id="work">
                 <h2 class="work__header">Как это работает</h2>
                 <div class="work__container">
                     <div class="work-item">
@@ -252,9 +254,9 @@
                         <p class="work-item__desc">Мы помогаем всё подготовить: интегрировать POS-систему, подключить платежи и курьерскую службу, настроить условия доставки и дизайн. Публикуем приложение и сайт.</p>
                     </div>
                 </div>
-                <a class="work__btn" href="#">Начать работу</a>
+                <a class="work__btn" href="#feedback">Начать работу</a>
             </section>
-            <section class="faq">
+            <section class="faq" id="faq">
                 <div class="faq__header">
                     <h2>FAQ</h2>
                 </div>
@@ -270,7 +272,7 @@
                     </div>
                     <div class="question-item">
                         <div class="question-item__question">
-                            <p>Сколько по времени займет внедрение?</p>
+                            <p>Как посмотреть пример (демо) сайта и мобильного приложения?</p>
                             <svg width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M1 11L11 1L21 11" stroke="#8397BF" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
@@ -279,7 +281,7 @@
                     </div>
                     <div class="question-item">
                         <div class="question-item__question">
-                            <p>Сколько по времени займет внедрение?</p>
+                            <p>Заказать или купить готовый сайт и приложение доставки еды и продуктов?</p>
                             <svg width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M1 11L11 1L21 11" stroke="#8397BF" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
@@ -288,7 +290,7 @@
                     </div>
                     <div class="question-item">
                         <div class="question-item__question">
-                            <p>Сколько по времени займет внедрение?</p>
+                            <p>После внедрения, нужно ли мне оплачивать тариф?</p>
                             <svg width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M1 11L11 1L21 11" stroke="#8397BF" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
@@ -297,7 +299,16 @@
                     </div>
                     <div class="question-item">
                         <div class="question-item__question">
-                            <p>Сколько по времени займет внедрение?</p>
+                            <p>Как проходит заказное внедрение?</p>
+                            <svg width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 11L11 1L21 11" stroke="#8397BF" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <p class="question-item__answer">От 1 до 14 дней. В зависимости от того, какие материалы у вас уже собраны на данный момент и как вы работаете с учетной системой</p>
+                    </div>
+                    <div class="question-item">
+                        <div class="question-item__question">
+                            <p>Что входит в абонентскую плату?</p>
                             <svg width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M1 11L11 1L21 11" stroke="#8397BF" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
@@ -306,16 +317,16 @@
                     </div>
                 </div>
             </section>
-            <section class="feedback-form feedback-form-second">
+            <section class="feedback-form feedback-form-second" id="feedback">
                 <form class="feedback-form__form validate-form">
                     <h2 class="feedback-form__header">Нет вашей учетной системы?</h2>
                     <p class="feedback-form__text">Отправьте заявку и мы поможем решить этот вопрос</p>
                     <div class="feedback-form__wrapper">
                         <div class="feedback-form__input input-container">
-                            <input class="validate-input telephone-input" data-type="telephone" type="text" placeholder="+7">
+                            <input class="validate-input telephone-input" data-type="telephone" name="telephone" type="text" placeholder="+7">
                         </div>
                         <div class="feedback-form__input input-container">
-                            <input class="validate-input" data-type="text" type="text" placeholder="Введите имя">
+                            <input class="validate-input" data-type="text" name="name" type="text" placeholder="Введите имя">
                         </div>
                         <button type="button" class="feedback-form__btn validate-form-btn">Оставить заявку</button>
                         <p class="feedback-form__subtext">Нажимая на кнопку “Оставить заявку”, я даю согласие <a href="#">на обработку персональных данных</a></p>

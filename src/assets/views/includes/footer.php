@@ -6,11 +6,11 @@
             </a>
             <nav class="footer__nav">
                 <ul>
-                    <li><a href="#">Возможности</a></li>
-                    <li><a href="#">Преимущества</a></li>
-                    <li><a href="#">Как подключить</a></li>
-                    <li><a href="#">Тарифы</a></li>
-                    <li><a href="#">Вопросы</a></li>
+                    <li><a href="#advantages">Возможности</a></li>
+                    <li><a href="#options">Преимущества</a></li>
+                    <li><a href="#work">Как подключить</a></li>
+                    <li><a href="#rates">Тарифы</a></li>
+                    <li><a href="#faq">Вопросы</a></li>
                 </ul>
             </nav>
             <div class="footer__contacts">

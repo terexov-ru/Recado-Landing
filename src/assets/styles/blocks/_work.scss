@@ -64,6 +64,21 @@
             justify-content: space-between;
 
             overflow-x: scroll;
+
+            padding-bottom: 25px;
+
+            &::-webkit-scrollbar {
+                width: 2px;
+                height: 6px;
+            }
+
+            &::-webkit-scrollbar-track {
+                background-color: #f3f4f7;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background-color: #cddefe;
+            }
         }
 
         &__btn {

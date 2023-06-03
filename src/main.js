@@ -19,6 +19,7 @@ import "IMAGES/poster.png";
 import "IMAGES/r_keeper.png";
 import "IMAGES/frontpad.png";
 import "IMAGES/sclad.png";
+import "IMAGES/main.png";
 
 import "ICONS/check.svg";
 import "ICONS/select-arrow.svg";

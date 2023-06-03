@@ -35,6 +35,12 @@
       a {
         @extend %text16-500;
         color: $text-color;
+
+        transition: color .3s;
+
+        &:hover{
+          color: $secondary;
+        }
       }
     }
   }

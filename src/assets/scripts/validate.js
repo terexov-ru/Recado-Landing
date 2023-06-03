@@ -52,6 +52,13 @@ document.addEventListener("DOMContentLoaded", function () {
         if (validCount != validateInputs.length) {
           e.preventDefault();
         } else {
+          let formData = new FormData(form);
+
+          for (let key of formData.keys()) {
+            console.log(`${key}: ${formData.get(key)}`);
+          }
+
+          sendDataToServer(formData);
           console.log("send");
         }
       });

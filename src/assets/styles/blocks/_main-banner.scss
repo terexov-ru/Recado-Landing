@@ -6,8 +6,21 @@
 
     padding: 70px 77px;
 
+    display: flex;
+
     &__info {
         max-width: 401px;
+
+        &__img {
+            display: none;
+        }
+    }
+
+    &__img {
+        margin-left: 50px;
+
+        width: 100%;
+        object-fit: contain;
     }
 
     h1 {
@@ -50,6 +63,19 @@
 
         &__info {
             max-width: none;
+
+            &__img {
+                display: block;
+
+                margin-top: 30px;
+
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+
+        &__img {
+            display: none;
         }
 
         h1 {

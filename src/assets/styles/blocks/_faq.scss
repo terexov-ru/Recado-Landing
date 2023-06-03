@@ -51,6 +51,10 @@
         }
 
         &:last-child {
+            .question-item__answer {
+                border-top: none;
+                border-bottom: 1px solid #8397bf;
+            }
             .question-item__question {
                 border-bottom: 1px solid #8397bf;
             }
