@@ -1,0 +1,27 @@
+%btn {
+  display: block;
+
+  width: 100%;
+
+  padding: 14px 0;
+
+  border: 1px solid $secondary;
+
+  background-color: $secondary;
+
+  border-radius: 10px;
+
+  @extend %text16-500;
+
+  line-height: 20px;
+  color: white;
+  text-align: center;
+
+  transition: background-color 0.3s, border 0.3s;
+
+  @media (min-width: 600px) {
+    &:hover {
+      background-color: $secondary;
+    }
+  }
+}

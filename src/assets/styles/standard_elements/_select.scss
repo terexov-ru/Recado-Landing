@@ -1,0 +1,92 @@
+.select-container {
+  display: flex;
+  gap: 11px;
+  align-items: center;
+
+  width: 100%;
+
+  white-space: nowrap;
+
+  @extend %BODY3;
+
+  .select {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    position: relative;
+  }
+
+  .new-select {
+    position: relative;
+    background: transparent;
+    border-radius: 0;
+    background: transparent;
+    padding: 4px 8px;
+    cursor: pointer;
+    user-select: none;
+
+    text-align: right;
+
+    color: $bw1;
+  }
+
+  .new-select__list {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    border: 1px solid #ced4da;
+    cursor: pointer;
+    width: 100%;
+    z-index: 2;
+    background: #ffffff;
+    user-select: none;
+  }
+
+  .new-select__list.on {
+    display: block;
+  }
+
+  .new-select__item span {
+    display: block;
+    padding: 4px 8px;
+
+    color: $bw1;
+
+    background: #ffffff;
+    transition: all 0.5s;
+  }
+
+  .new-select__item span:hover {
+    color: white;
+    background-color: $bw3;
+  }
+
+  .new-select:after {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 8px;
+    top: 4px;
+
+    background: url("resourses/select-arrow.svg") no-repeat right center / contain;
+    opacity: 1;
+
+    -webkit-transition: all 0.27s ease-in-out;
+    -o-transition: all 0.27s ease-in-out;
+    transition: all 0.27s ease-in-out;
+
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  .new-select.on:after {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}

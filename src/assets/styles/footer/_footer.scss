@@ -1,0 +1,116 @@
+.footer {
+    margin-top: 120px;
+
+    background-color: #202631;
+
+    &__content {
+        padding: 20px 0;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: space-between;
+        row-gap: 65px;
+
+        grid-template-areas:
+            "logo nav nav"
+            "contacts info tel";
+    }
+
+    &__logo {
+        width: 147px;
+
+        grid-area: logo;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__nav {
+        grid-area: nav;
+        justify-self: end;
+        align-self: center;
+
+        ul {
+            display: flex;
+
+            li:not(:first-of-type) {
+                margin-left: 32px;
+            }
+
+            li {
+                a {
+                    @extend %text16-500;
+                    color: white;
+                }
+            }
+        }
+    }
+
+    &__contacts {
+        grid-area: contacts;
+
+        display: flex;
+        align-items: center;
+
+        a {
+            width: 24px;
+            height: 24px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            border-radius: 50%;
+            background-color: white;
+
+            &:not(:first-of-type) {
+                margin-left: 8px;
+            }
+        }
+    }
+
+    &__info {
+        grid-area: info;
+
+        display: flex;
+        justify-content: center;
+        align-self: center;
+
+        p {
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+            color: #8397bf;
+        }
+
+        a {
+            margin-left: 50px;
+
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+
+            color: #8397bf;
+        }
+    }
+
+    &__phone {
+        grid-area: tel;
+
+        display: flex;
+        align-items: center;
+
+        justify-self: end;
+
+        span {
+            margin-left: 7px;
+            @extend %text16-400;
+            color: #fff;
+        }
+    }
+}

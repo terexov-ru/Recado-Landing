@@ -1,0 +1,162 @@
+@mixin text-input(
+  $text-color,
+  $placeholder-color,
+  $padding,
+  $border-color,
+  $border-radius,
+  $focus-color,
+  $max-width,
+  $label-margin
+) {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @extend %input-font;
+  color: $text-color;
+
+  max-width: $max-width;
+
+  label {
+    margin-bottom: $label-margin;
+  }
+
+  input {
+    width: 100%;
+
+    padding: $padding;
+
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+
+    transition: border 0.3s;
+
+    @extend %input-font;
+
+    &::placeholder {
+      @extend %input-font;
+      color: $placeholder-color;
+    }
+
+    &:focus {
+      border-color: $focus-color;
+    }
+  }
+
+  .show-password {
+    position: absolute;
+
+    top: 50%;
+    transform: translateY(-50%);
+    right: 8px;
+
+    cursor: pointer;
+
+    path {
+      transition: fill 0.3s;
+    }
+
+    &:hover {
+      path {
+      }
+    }
+
+    &.password-shown {
+      path {
+      }
+    }
+  }
+
+  &::after {
+    font-weight: 400;
+
+    color: rgb(221, 0, 0);
+
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+
+    content: "Заполните это поле.";
+
+    opacity: 0;
+
+    transform: translateY(0px);
+
+    transition: transform 0.5s, opacity 0.5s, bottom 0.5s;
+  }
+
+  &.warning {
+    input {
+      border: 1px solid rgb(221, 0, 0);
+    }
+    textarea {
+    }
+    &::after {
+      opacity: 1;
+      bottom: -23px;
+    }
+  }
+
+  &.passwords-not-equal {
+    &::after {
+      content: "Пароли не совпадают";
+    }
+  }
+
+  &.wrong-email {
+    &::after {
+      content: "Неверный email";
+    }
+  }
+
+  &.wrong-file {
+    &::after {
+      content: "Выберите файл";
+    }
+  }
+
+  &.wrong-code {
+    &::after {
+      content: "Неверный код";
+    }
+  }
+
+  &.wrong-login {
+    &::after {
+      content: "Неверный логин и/или пароль";
+    }
+  }
+
+  &.wrong-password {
+    &::after {
+      content: "Неверный пароль";
+    }
+  }
+
+  &.rating-validate-container {
+    &::after {
+      content: "Укажите рейтинг";
+    }
+  }
+
+  &.success {
+    input {
+      border-color: rgb(19, 141, 19);
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .text-input {
+      padding: 4px 8px;
+    }
+  }
+}
+
+input[type="password"] {
+  letter-spacing: 3px;
+
+  &::placeholder {
+    letter-spacing: 0.1px;
+  }
+}

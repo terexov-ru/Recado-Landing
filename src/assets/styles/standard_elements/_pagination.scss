@@ -1,0 +1,149 @@
+.pagination-container {
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+}
+
+.pagination {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    align-self: center;
+
+    width: fit-content;
+
+    margin-top: 15px;
+
+    justify-self: center;
+
+    &__arrow {
+        position: absolute;
+
+        top: 50%;
+        transform: translateY(-50%);
+
+        cursor: pointer;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        transition: background-color 0.3s;
+
+        &__left {
+            left: -32px;
+        }
+
+        &__right {
+            right: -32px;
+            transform: translateY(-50%) rotate(180deg);
+        }
+
+        &:hover {
+            background-color: $main-color-hover;
+        }
+    }
+
+    &__pages {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+
+        li {
+            position: relative;
+
+            padding: 2px 8px;
+
+            @extend %text16-500;
+            color: #1b56c1;
+
+            cursor: pointer;
+
+            transition: background-color 0.3s;
+
+            &:hover {
+                background-color: $main-color-hover;
+            }
+
+            &.active {
+                color: $white;
+                background-color: $main-color;
+            }
+
+            &.overflow {
+                color: transparent;
+                &::after {
+                    display: block;
+                    content: "...";
+
+                    color: #1b56c1;
+
+                    text-align: center;
+
+                    width: 100%;
+                    height: 100%;
+
+                    position: absolute;
+
+                    top: 0;
+                    right: 0;
+                }
+            }
+        }
+    }
+}
+
+.pagination-page-changer-container {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+
+    label {
+        @extend %text16-400;
+        color: $text-color;
+    }
+
+    input {
+        padding: 4px 2px;
+
+        text-align: center;
+
+        @extend %text16-400;
+        color: $text-color;
+
+        border-bottom: 1px solid $D3;
+
+        transition: border 0.3s;
+
+        width: 32px;
+
+        &::placeholder {
+            @extend %text16-400;
+            color: $B7;
+        }
+
+        &:focus {
+            border-color: $B7;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .pagination-container {
+        display: grid;
+        grid-template-columns: 0px 1fr 200px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .pagination-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 16px;
+
+        align-items: center;
+        justify-items: center;
+    }
+}

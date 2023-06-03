@@ -1,0 +1,43 @@
+@import "STYLES/variables/_fonts.scss";
+@import "STYLES/variables/_indents.scss";
+@import "STYLES/variables/_colors.scss";
+@import "STYLES/variables/_gradients.scss";
+
+@import "STYLES/default/_default.scss";
+@import "STYLES/general/_general.scss";
+
+@import "STYLES/slick-slider/_slick-slider.scss";
+@import "STYLES/custom_scrollbar/_custom_scrollbar.scss";
+
+@import "STYLES/standard_elements/_hover-animation.scss";
+@import "STYLES/standard_elements/_btn.scss";
+@import "STYLES/standard_elements/_text-input.scss";
+
+@import "STYLES/header/_header.scss";
+@import "STYLES/footer/_footer.scss";
+
+@import "STYLES/blocks/_main-banner.scss";
+@import "STYLES/blocks/_advantages.scss";
+@import "STYLES/blocks/_partners.scss";
+@import "STYLES/blocks/_feedback.scss";
+@import "STYLES/blocks/_options.scss";
+@import "STYLES/blocks/_rates.scss";
+@import "STYLES/blocks/_work.scss";
+@import "STYLES/blocks/_faq.scss";
+
+@import "STYLES/main/_main.scss";
+
+@media screen and (max-width: 1600px) {
+    @import "STYLES/general/_general_1600.scss";
+}
+
+@media screen and (max-width: 1200px) {
+    @import "STYLES/general/_general_1200.scss";
+}
+
+@media screen and (max-width: 600px) {
+    @import "STYLES/general/_general_600.scss";
+    @import "STYLES/variables/_fonts-600.scss";
+    @import "STYLES/header/_header_600.scss";
+    @import "STYLES/footer/_footer_600.scss";
+}

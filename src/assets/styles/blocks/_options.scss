@@ -1,0 +1,136 @@
+.options {
+    margin-top: 120px;
+
+    h2 {
+        @extend %H1;
+        color: $text-color;
+    }
+
+    &__scroll-container {
+        margin-top: 80px;
+
+        overflow-x: scroll;
+
+        padding-bottom: 25px;
+
+        &::-webkit-scrollbar {
+            width: 2px;
+            height: 6px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background-color: #f3f4f7;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: #cddefe;
+        }
+    }
+
+    &__container {
+        display: flex;
+        align-items: center;
+    }
+
+    .option-item {
+        padding: 30px 20px 40px;
+
+        border: 1px solid #8397bf;
+        border-radius: 18px;
+
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        max-width: 296px;
+        min-width: 296px;
+        min-height: 378px;
+
+        &:not(:first-child) {
+            margin-left: 32px;
+        }
+
+        &__header {
+            @extend %text24-700;
+            color: $text-color;
+        }
+
+        &__text {
+            margin-top: 16px;
+            @extend %text16-400;
+        }
+
+        &__img {
+            margin-top: 40px;
+
+            align-self: flex-end;
+            width: 105px;
+            height: 105px;
+        }
+    }
+
+    .progress {
+        margin-top: 30px;
+
+        display: block;
+        width: 100%;
+        height: 10px;
+        border-radius: 10px;
+        overflow: hidden;
+
+        background-color: #f5f5f5;
+        background-image: linear-gradient(to right, black, black);
+        background-repeat: no-repeat;
+        background-size: 0 100%;
+
+        transition: background-size 0.4s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .options {
+        margin-top: 65px;
+
+        &__container {
+            margin-top: 35px;
+
+            overflow-x: scroll;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .option-item {
+            padding: 30px 10px 20px;
+
+            border-radius: 10px;
+
+            width: 100%;
+
+            display: flex;
+            flex-direction: column;
+
+            max-width: 228px;
+            min-width: 228px;
+            min-height: 288px;
+
+            &__text {
+                margin-top: 14px;
+            }
+
+            &__img {
+                margin-top: 40px;
+
+                align-self: flex-end;
+                width: 95px;
+                height: 95px;
+            }
+
+            &:not(:first-child) {
+                margin-left: 10px;
+            }
+        }
+    }
+}

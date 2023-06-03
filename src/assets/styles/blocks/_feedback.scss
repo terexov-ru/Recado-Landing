@@ -1,0 +1,131 @@
+.feedback-form {
+    margin-top: 28px;
+
+    display: flex;
+
+    background-color: $bg-color;
+    border-radius: 18px;
+
+    &__form {
+        padding: 70px 0 65px 80px;
+    }
+
+    &__header {
+        @extend %text36-700;
+    }
+
+    &__text {
+        margin-top: 12px;
+
+        @extend %text20-400;
+    }
+
+    &__wrapper {
+        max-width: 320px;
+    }
+
+    &__input {
+        @include text-input($text-color, #8397bf, (14px 20px), #ffffff, 10px, $text-color, none, 8px);
+
+        margin-top: 16px;
+
+        &:first-of-type {
+            margin-top: 50px;
+        }
+    }
+
+    &__btn {
+        margin-top: 24px;
+
+        @extend %btn;
+    }
+
+    &__subtext {
+        margin-top: 16px;
+
+        @extend %text14-400;
+        color: #8397bf;
+
+        a {
+            color: #8397bf;
+            text-decoration: underline;
+
+            &:hover {
+                color: $secondary;
+            }
+        }
+    }
+
+    &__img {
+        margin: 0 auto;
+
+        width: 440px;
+        height: 450px;
+        object-fit: contain;
+
+        align-self: flex-end;
+    }
+}
+
+.feedback-form-second {
+    margin-top: 120px;
+}
+
+@media screen and (max-width: 600px) {
+    .feedback-form {
+        margin-top: 28px;
+
+        display: flex;
+        flex-direction: column;
+
+        background-color: $bg-color;
+        border-radius: 10px;
+
+        &__form {
+            padding: 30px 10px 0;
+        }
+
+        &__header {
+        }
+
+        &__text {
+            margin-top: 14px;
+        }
+
+        &__wrapper {
+            max-width: none;
+        }
+
+        &__input {
+            margin-top: 10px;
+
+            &:first-of-type {
+                margin-top: 16px;
+            }
+        }
+
+        &__btn {
+            margin-top: 10px;
+        }
+
+        &__subtext {
+            margin-top: 10px;
+        }
+
+        &__img {
+            margin: 0 auto;
+
+            margin-top: 35px;
+
+            width: 224px;
+            height: auto;
+            object-fit: contain;
+
+            align-self: center;
+        }
+    }
+
+    .feedback-form-second {
+        margin-top: 65px;
+    }
+}

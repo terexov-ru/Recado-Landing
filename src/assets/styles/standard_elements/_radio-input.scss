@@ -1,0 +1,86 @@
+.radio-input {
+  position: relative;
+  input {
+    position: absolute;
+    z-index: -99;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+  }
+
+  label {
+    @extend %link;
+    color: #666666;
+    font-weight: 500;
+
+    display: flex;
+    gap: 16px;
+    align-items: center;
+
+    transition: color 0.3s, background-color 0.3s;
+
+    padding: 14px 18px;
+    border-radius: 4px;
+
+    position: relative;
+    z-index: 2;
+
+    cursor: pointer;
+
+    &:hover {
+      background-color: #fbfbfa;
+    }
+  }
+
+  label::before {
+    display: block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    border: 1.5px solid $red;
+    border-radius: 50%;
+
+    flex-shrink: 0;
+
+    transition: background-color 0.3s;
+  }
+
+  input:checked + label {
+    color: $text;
+
+    background-color: #fbfbfd;
+  }
+
+  input:checked + label::before {
+    outline: 3px solid white;
+    outline-offset: -4.5px;
+    background-color: $red;
+  }
+
+  &::after {
+    @extend %text16;
+    font-weight: 400;
+    color: $red-hover;
+
+    position: absolute;
+    left: 27px;
+    bottom: -10px;
+
+    content: "Подтвердите согласие";
+
+    z-index: 0;
+
+    opacity: 0;
+
+    transform: translateY(0px);
+
+    transition: transform 0.5s, opacity 0.5s, bottom 0.5s;
+  }
+
+  &.warning {
+    &::after {
+      opacity: 1;
+      bottom: -23px;
+    }
+  }
+}
