@@ -36,9 +36,9 @@
         @extend %text16-500;
         color: $text-color;
 
-        transition: color .3s;
+        transition: color 0.3s;
 
-        &:hover{
+        &:hover {
           color: $secondary;
         }
       }
@@ -48,18 +48,73 @@
   &__language {
     margin-left: auto;
 
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+
     &__item {
       display: flex;
       align-items: center;
 
+      padding: 13px 10px;
+
+      background-color: white;
+
+      cursor: pointer;
+
       span {
         @extend %text16-500;
+        line-height: 20px;
         color: $text-color;
         margin-left: 14px;
       }
 
       .arrow {
-        margin-left: 14px;
+        margin-left: 12px;
+
+        transition: transform 0.3s;
+      }
+
+      transition: all 0.3s;
+    }
+
+    .first-lang {
+      border: 1px solid transparent;
+      border-radius: 10px 10px 0px 0px;
+    }
+
+    .second-lang {
+      position: absolute;
+
+      left: 0;
+      top: 48px;
+
+      opacity: 0;
+
+      border: 1px solid #8397bf;
+      border-radius: 0px 0px 10px 10px;
+      border-top: none;
+      width: 100%;
+
+      &:hover {
+        background-color: $bg-color;
+      }
+    }
+
+    &.show {
+      .first-lang {
+        border: 1px solid #8397bf;
+      }
+      .second-lang {
+        opacity: 1;
+
+        &:hover {
+          background-color: $bg-color;
+        }
+      }
+      .arrow {
+        transform: rotate(-180deg);
       }
     }
   }

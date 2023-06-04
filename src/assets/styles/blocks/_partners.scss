@@ -28,7 +28,11 @@
     .partners {
         flex-wrap: wrap;
 
-        justify-content: space-evenly;
+        justify-content: space-between;
+
+        padding: 0px 10px;
+
+        margin-top: 0;
 
         .partner-item {
             max-width: 70px;

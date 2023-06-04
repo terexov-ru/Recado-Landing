@@ -24,6 +24,23 @@
         max-width: 320px;
     }
 
+    .phone-select {
+        display: flex;
+
+        margin-top: 16px;
+
+        .select-container {
+            width: 94px;
+        }
+
+        .feedback-form__input {
+            margin-top: 0;
+            input {
+                border-radius: 0 10px 10px 0;
+            }
+        }
+    }
+
     &__input {
         @include text-input($text-color, #8397bf, (14px 20px), #ffffff, 10px, $text-color, none, 8px);
 
@@ -82,7 +99,7 @@
         border-radius: 10px;
 
         &__form {
-            padding: 30px 10px 0;
+            padding: 30px 8px 0;
         }
 
         &__header {
@@ -110,6 +127,9 @@
 
         &__subtext {
             margin-top: 10px;
+
+            font-size: 12px;
+            line-height: 18px;
         }
 
         &__img {

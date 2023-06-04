@@ -13,10 +13,10 @@ $(function () {
         $(".telephone-input").removeClass("validate-success");
       },
       clearIfNotMatch: true,
-      placeholder: "+_ (___) ___-__-__",
+      placeholder: "(___) ___-__-__",
     };
 
-    $(".telephone-input").mask("+0 (000) 000-00-00", options);
+    $(".telephone-input").mask("(000) 000-00-00", options);
   }
 });
 
@@ -52,7 +52,14 @@ document.addEventListener("DOMContentLoaded", function () {
         if (validCount != validateInputs.length) {
           e.preventDefault();
         } else {
-          let formData = new FormData(form);
+          let code = form.querySelector(".phone-code");
+          let phone = form.querySelector(".telephone-input");
+          let name = form.querySelector(".name-input");
+
+          let formData = new FormData();
+          formData.append("action", "new_request");
+          formData.append("name", name.value);
+          formData.append("telephone", code.value + " " + phone.value);
 
           for (let key of formData.keys()) {
             console.log(`${key}: ${formData.get(key)}`);

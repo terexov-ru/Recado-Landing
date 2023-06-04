@@ -78,11 +78,24 @@
                     <h2 class="feedback-form__header">Нет вашей учетной системы?</h2>
                     <p class="feedback-form__text">Отправьте заявку и мы поможем решить этот вопрос</p>
                     <div class="feedback-form__wrapper">
-                        <div class="feedback-form__input input-container">
-                            <input class="validate-input telephone-input" data-type="telephone" name="telephone" type="text" placeholder="+7">
+                        <div class="phone-select">
+                            <div class="select-container">
+                                <select class="select phone-code" id="phone_code" name="phone_code">
+                                    <option disabled>+7</option>
+                                    <option value="+4">+4</option>
+                                    <option value="+5">+5</option>
+                                    <option value="+6">+6</option>
+                                    <option value="+7">+7</option>
+                                    <option value="+8">+8</option>
+                                    <option value="+9">+9</option>
+                                </select>
+                            </div>
+                            <div class="feedback-form__input input-container">
+                                <input class="validate-input telephone-input" data-type="telephone" name="telephone" type="text" placeholder="+7">
+                            </div>
                         </div>
                         <div class="feedback-form__input input-container">
-                            <input class="validate-input" data-type="text" type="text" name="name" placeholder="Введите имя">
+                            <input class="validate-input name-input" data-type="text" type="text" name="name" placeholder="Введите имя">
                         </div>
                         <button type="button" class="feedback-form__btn validate-form-btn">Оставить заявку</button>
                         <p class="feedback-form__subtext">Нажимая на кнопку “Оставить заявку”, я даю согласие <a href="#">на обработку персональных данных</a></p>
@@ -96,7 +109,7 @@
                     <div class="options__container">
                         <div class="option-item">
                             <h5 class="option-item__header">Доставкам еды</h5>
-                            <p class="option-item__text">Принимать заказы с сайта напрямую во FrontPad, освободить оператора от лишних звонков</p>
+                            <p class="option-item__text">Принимать заказы с сайта напрямую во FrontPad, освободить оператора<br>от&nbsp;лишних звонков</p>
                             <img class="option-item__img" src="resourses/option1.svg" alt="option1">
                         </div>
                         <div class="option-item">

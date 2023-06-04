@@ -65,19 +65,22 @@
 
             overflow-x: scroll;
 
-            padding-bottom: 25px;
+            padding-bottom: 0;
 
             &::-webkit-scrollbar {
                 width: 2px;
                 height: 6px;
+                display: none;
             }
 
             &::-webkit-scrollbar-track {
                 background-color: #f3f4f7;
+                display: none;
             }
 
             &::-webkit-scrollbar-thumb {
                 background-color: #cddefe;
+                display: none;
             }
         }
 
@@ -98,7 +101,8 @@
 
             padding: 10px;
 
-            background: #f3f4f7;
+            background-color: #fff;
+            border: 1px solid #8397bf;
             border-radius: 10px;
 
             &:not(:first-child) {
@@ -110,7 +114,10 @@
                 font-size: 68px;
                 line-height: 74px;
 
-                color: $text-color;
+                color: #fff;
+
+                -webkit-text-stroke-width: 2px;
+                -webkit-text-stroke-color: #fab030;
             }
 
             &__name {
