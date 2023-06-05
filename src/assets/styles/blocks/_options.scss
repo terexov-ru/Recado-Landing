@@ -8,23 +8,6 @@
 
     &__scroll-container {
         margin-top: 80px;
-
-        overflow-x: scroll;
-
-        padding-bottom: 25px;
-
-        &::-webkit-scrollbar {
-            width: 2px;
-            height: 6px;
-        }
-
-        &::-webkit-scrollbar-track {
-            background-color: #f3f4f7;
-        }
-
-        &::-webkit-scrollbar-thumb {
-            background-color: #cddefe;
-        }
     }
 
     &__container {
@@ -88,11 +71,36 @@
 
         transition: background-size 0.4s ease-in-out;
     }
+
+    .mobile-container {
+        display: none;
+    }
+
+    .swiper {
+        padding-bottom: 40px;
+    }
+
+    .swiper-scrollbar {
+        height: 6px;
+        background-color: #f3f4f7;
+    }
+
+    .swiper-scrollbar-drag {
+        background-color: #cddefe;
+    }
 }
 
 @media screen and (max-width: 600px) {
     .options {
         margin-top: 65px;
+
+        .desc-container {
+            display: none;
+        }
+
+        .mobile-container {
+            display: flex;
+        }
 
         &__scroll-container {
             overflow-x: scroll;

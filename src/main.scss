@@ -32,8 +32,18 @@
     @import "STYLES/general/_general_1600.scss";
 }
 
+@media screen and (max-width: 1400px) {
+    @import "STYLES/general/_general_1400.scss";
+}
+
 @media screen and (max-width: 1200px) {
     @import "STYLES/general/_general_1200.scss";
+    @import "STYLES/header/_header_1200.scss";
+    @import "STYLES/footer/_footer_1200.scss";
+}
+
+@media screen and (max-width: 800px) {
+    @import "STYLES/footer/_footer_800.scss";
 }
 
 @media screen and (max-width: 600px) {

@@ -1,8 +1,4 @@
-import SimpleBar from "simplebar";
-import "simplebar/dist/simplebar.css";
-
-import ResizeObserver from "resize-observer-polyfill";
-window.ResizeObserver = ResizeObserver;
+import "swiper/css/bundle";
 
 import "./main.scss";
 
@@ -24,6 +20,10 @@ import "IMAGES/01.png";
 import "IMAGES/02.png";
 import "IMAGES/03.png";
 import "IMAGES/04.png";
+
+import "IMAGES/sklad.svg";
+import "IMAGES/frontpad.svg";
+import "IMAGES/iiko.svg";
 
 import "ICONS/check.svg";
 import "ICONS/select-arrow.svg";

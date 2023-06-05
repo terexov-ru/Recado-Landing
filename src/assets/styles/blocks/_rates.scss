@@ -88,6 +88,45 @@
     }
 }
 
+@media screen and (max-width: 1200px) {
+    .rates {
+        .rate-item {
+            min-width: 350px;
+            max-width: 350px;
+
+            padding: 30px 20px 32px;
+
+            &:not(:first-child) {
+                margin-left: 32px;
+            }
+        }
+        &__container {
+            display: flex;
+            justify-content: space-between;
+
+            overflow-x: scroll;
+
+            padding-bottom: 0;
+
+            &::-webkit-scrollbar {
+                width: 2px;
+                height: 6px;
+                display: none;
+            }
+
+            &::-webkit-scrollbar-track {
+                background-color: #f3f4f7;
+                display: none;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background-color: #cddefe;
+                display: none;
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 600px) {
     .rates {
         margin-top: 65px;

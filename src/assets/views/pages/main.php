@@ -65,7 +65,7 @@
             <section class="partners" id="partners">
                 <div class="partners__first-row">
                     <div class="partner-item">
-                        <img src="resourses/iiko.png" alt="partner">
+                        <img src="resourses/iiko.svg" alt="partner">
                     </div>
                     <div class="partner-item">
                         <img src="resourses/1c.png" alt="partner">
@@ -80,21 +80,21 @@
                         <img src="resourses/r_keeper.png" alt="partner">
                     </div>
                     <div class="partner-item">
-                        <img src="resourses/frontpad.png" alt="partner">
+                        <img src="resourses/frontpad.svg" alt="partner">
                     </div>
                     <div class="partner-item">
-                        <img src="resourses/sclad.png" alt="partner">
+                        <img src="resourses/sklad.svg" alt="partner">
                     </div>
                 </div>
                 <div class="partners__second-row">
                     <div class="partner-item">
                         <img src="resourses/r_keeper.png" alt="partner">
                     </div>
-                    <div class="partner-item">
-                        <img src="resourses/frontpad.png" alt="partner">
+                    <div class="partner-item frontpad">
+                        <img src="resourses/frontpad.svg" alt="partner">
                     </div>
                     <div class="partner-item">
-                        <img src="resourses/sclad.png" alt="partner">
+                        <img src="resourses/sklad.svg" alt="partner">
                     </div>
                 </div>
             </section>
@@ -131,7 +131,7 @@
             <section class="options" id="options">
                 <h2>Кому подойдет rekado</h2>
                 <div class="options__scroll-container">
-                    <div class="options__container">
+                    <div class="options__container mobile-container">
                         <div class="option-item">
                             <h5 class="option-item__header">Доставкам еды</h5>
                             <p class="option-item__text">Принимать заказы с сайта напрямую во FrontPad, освободить оператора<br>от&nbsp;лишних звонков</p>
@@ -158,8 +158,49 @@
                             <img class="option-item__img" src="resourses/option4.svg" alt="option1">
                         </div>
                     </div>
-                    <!-- <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
-                    </div> -->
+                    <div class="options__container desc-container">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="option-item">
+                                        <h5 class="option-item__header">Доставкам еды</h5>
+                                        <p class="option-item__text">Принимать заказы с сайта напрямую во FrontPad, освободить оператора<br>от&nbsp;лишних звонков</p>
+                                        <img class="option-item__img" src="resourses/option1.svg" alt="option1">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="option-item">
+                                        <h5 class="option-item__header">Доставкам еды</h5>
+                                        <p class="option-item__text">Принимать заказы с сайта напрямую во FrontPad, освободить оператора от лишних звонков</p>
+                                        <img class="option-item__img" src="resourses/option1.svg" alt="option1">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="option-item">
+                                        <h5 class="option-item__header">Кафе и ресторанам</h5>
+                                        <p class="option-item__text">Организовать доставку еды и самовывоз, а также стимулировать бонусами постоянных клиентов</p>
+                                        <img class="option-item__img" src="resourses/option2.svg" alt="option1">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="option-item">
+                                        <h5 class="option-item__header">Интернет-магазинам</h5>
+                                        <p class="option-item__text">Подключите наше приложение к сайту на 1С-Битриксе. Каталог, клиенты, заказы синхронизируются</p>
+                                        <img class="option-item__img" src="resourses/option3.svg" alt="option1">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="option-item">
+                                        <h5 class="option-item__header">Продуктовому ритейлу</h5>
+                                        <p class="option-item__text">Заменить пластиковую карту на приложение и сайт, где клиенты видят свои бонусы и историю заказов</p>
+                                        <img class="option-item__img" src="resourses/option4.svg" alt="option1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-scrollbar">
+                            </div>
+                        </div>
+                    </div>
             </section>
             <section class="rates" id="rates">
                 <h2 class="rates__header">Тарифы</h2>
