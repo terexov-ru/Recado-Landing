@@ -1,5 +1,5 @@
 .options {
-    margin-top: 120px;
+    margin-top: 100px;
 
     h2 {
         @extend %H1;
@@ -135,6 +135,12 @@
             max-width: 228px;
             min-width: 228px;
             min-height: 288px;
+
+            &__header {
+                font-weight: 600;
+                font-size: 16px !important;
+                line-height: 22px !important;
+            }
 
             &__text {
                 margin-top: 14px;

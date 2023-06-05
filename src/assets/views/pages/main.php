@@ -33,44 +33,69 @@
                 <h2>С rekado вы сможете</h2>
                 <div class="advantages__container">
                     <div class="advantages-item">
-                        <p>Быстро и гибко управлять рестораном</p>
+                        <div class="advantages-item__text">
+                            <p class="advantages-item__text__header">Быстро и гибко управлять рестораном</p>
+                            <p class="advantages-item__text__info">Описание этой карточки, мало слов, много смысла. Нужно прочесть внимательно. Рим не один день строился.</p>
+                        </div>
                         <img src="resourses/advantage_1.png" alt="advantage">
                     </div>
                     <div class="advantages-item">
-                        <p>Интегрироваться с вашей учетной системой</p>
+                        <div class="advantages-item__text">
+                            <p class="advantages-item__text__header">Интегрироваться с вашей учетной системой</p>
+                            <p class="advantages-item__text__info">Описание этой карточки, мало слов, много смысла. Нужно прочесть внимательно. Рим не один день строился.</p>
+                        </div>
                         <img src="resourses/advantage_2.png" alt="advantage">
                     </div>
                     <div class="advantages-item">
-                        <p>Принимать онлайн оплату любым доступным методом</p>
+                        <div class="advantages-item__text">
+                            <p class="advantages-item__text__header">Принимать онлайн оплату любым доступным методом</p>
+                            <p class="advantages-item__text__info">Описание этой карточки, мало слов, много смысла. Нужно прочесть внимательно. Рим не один день строился.</p>
+                        </div>
                         <img src="resourses/advantage_3.png" alt="advantage">
                     </div>
                     <div class="advantages-item">
-                        <p>Увеличить скорость работы ресторана</p>
+                        <div class="advantages-item__text">
+                            <p class="advantages-item__text__header">Увеличить<br>скорость<br>работы ресторана</p>
+                            <p class="advantages-item__text__info">Описание этой карточки, мало слов, много смысла. Нужно прочесть внимательно. Рим не один день строился.</p>
+                        </div>
                         <img src="resourses/advantage_4.png" alt="advantage">
                     </div>
                 </div>
             </section>
             <section class="partners" id="partners">
-                <div class="partner-item">
-                    <img src="resourses/iiko.png" alt="partner">
+                <div class="partners__first-row">
+                    <div class="partner-item">
+                        <img src="resourses/iiko.png" alt="partner">
+                    </div>
+                    <div class="partner-item">
+                        <img src="resourses/1c.png" alt="partner">
+                    </div>
+                    <div class="partner-item">
+                        <img src="resourses/poster.png" alt="partner">
+                    </div>
+                    <div class="partner-item">
+                        <img src="resourses/sbis.png" alt="partner">
+                    </div>
+                    <div class="partner-item">
+                        <img src="resourses/r_keeper.png" alt="partner">
+                    </div>
+                    <div class="partner-item">
+                        <img src="resourses/frontpad.png" alt="partner">
+                    </div>
+                    <div class="partner-item">
+                        <img src="resourses/sclad.png" alt="partner">
+                    </div>
                 </div>
-                <div class="partner-item">
-                    <img src="resourses/1c.png" alt="partner">
-                </div>
-                <div class="partner-item">
-                    <img src="resourses/poster.png" alt="partner">
-                </div>
-                <div class="partner-item">
-                    <img src="resourses/sbis.png" alt="partner">
-                </div>
-                <div class="partner-item">
-                    <img src="resourses/r_keeper.png" alt="partner">
-                </div>
-                <div class="partner-item">
-                    <img src="resourses/frontpad.png" alt="partner">
-                </div>
-                <div class="partner-item">
-                    <img src="resourses/sclad.png" alt="partner">
+                <div class="partners__second-row">
+                    <div class="partner-item">
+                        <img src="resourses/r_keeper.png" alt="partner">
+                    </div>
+                    <div class="partner-item">
+                        <img src="resourses/frontpad.png" alt="partner">
+                    </div>
+                    <div class="partner-item">
+                        <img src="resourses/sclad.png" alt="partner">
+                    </div>
                 </div>
             </section>
             <section class="feedback-form">
@@ -85,7 +110,7 @@
                                     <option value="+4">+4</option>
                                     <option value="+5">+5</option>
                                     <option value="+6">+6</option>
-                                    <option value="+7">+7</option>
+                                    <option value="+7" selected>+7</option>
                                     <option value="+8">+8</option>
                                     <option value="+9">+9</option>
                                 </select>
@@ -247,21 +272,25 @@
                 <h2 class="work__header">Как это работает</h2>
                 <div class="work__container">
                     <div class="work-item">
+                        <img class="work-item__img" src="resourses/01.png" alt="01">
                         <p class="work-item__number">01</p>
                         <p class="work-item__name">Заполните анкету</p>
                         <p class="work-item__desc">Мы помогаем всё подготовить: интегрировать POS-систему, подключить платежи и курьерскую службу, настроить условия доставки и дизайн. Публикуем приложение и сайт.</p>
                     </div>
                     <div class="work-item">
+                        <img class="work-item__img" src="resourses/02.png" alt="02">
                         <p class="work-item__number">02</p>
                         <p class="work-item__name">Ознакомиться с условиями сотрудничества</p>
                         <p class="work-item__desc">Мы помогаем всё подготовить: интегрировать POS-систему, подключить платежи и курьерскую службу, настроить условия доставки и дизайн. Публикуем приложение и сайт.</p>
                     </div>
                     <div class="work-item">
+                        <img class="work-item__img" src="resourses/03.png" alt="03">
                         <p class="work-item__number">03</p>
                         <p class="work-item__name">Подключить тариф</p>
                         <p class="work-item__desc">Мы помогаем всё подготовить: интегрировать POS-систему, подключить платежи и курьерскую службу, настроить условия доставки и дизайн. Публикуем приложение и сайт.</p>
                     </div>
                     <div class="work-item">
+                        <img class="work-item__img" src="resourses/04.png" alt="04">
                         <p class="work-item__number">04</p>
                         <p class="work-item__name">Начать работу в нашей системе</p>
                         <p class="work-item__desc">Мы помогаем всё подготовить: интегрировать POS-систему, подключить платежи и курьерскую службу, настроить условия доставки и дизайн. Публикуем приложение и сайт.</p>
@@ -335,11 +364,24 @@
                     <h2 class="feedback-form__header">Нет вашей учетной системы?</h2>
                     <p class="feedback-form__text">Отправьте заявку и мы поможем решить этот вопрос</p>
                     <div class="feedback-form__wrapper">
-                        <div class="feedback-form__input input-container">
-                            <input class="validate-input telephone-input" data-type="telephone" name="telephone" type="text" placeholder="+7">
+                        <div class="phone-select">
+                            <div class="select-container">
+                                <select class="select phone-code" id="phone_code" name="phone_code">
+                                    <option disabled>+7</option>
+                                    <option value="+4">+4</option>
+                                    <option value="+5">+5</option>
+                                    <option value="+6">+6</option>
+                                    <option value="+7" selected>+7</option>
+                                    <option value="+8">+8</option>
+                                    <option value="+9">+9</option>
+                                </select>
+                            </div>
+                            <div class="feedback-form__input input-container">
+                                <input class="validate-input telephone-input" data-type="telephone" name="telephone" type="text" placeholder="+7">
+                            </div>
                         </div>
                         <div class="feedback-form__input input-container">
-                            <input class="validate-input" data-type="text" name="name" type="text" placeholder="Введите имя">
+                            <input class="validate-input name-input" data-type="text" type="text" name="name" placeholder="Введите имя">
                         </div>
                         <button type="button" class="feedback-form__btn validate-form-btn">Оставить заявку</button>
                         <p class="feedback-form__subtext">Нажимая на кнопку “Оставить заявку”, я даю согласие <a href="#">на обработку персональных данных</a></p>

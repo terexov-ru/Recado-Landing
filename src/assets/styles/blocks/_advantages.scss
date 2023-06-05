@@ -1,5 +1,5 @@
 .advantages {
-    margin-top: 120px;
+    margin-top: 100px;
 
     h2 {
         @extend %H1;
@@ -18,6 +18,8 @@
         height: 226px;
         padding: 20px;
 
+        overflow: hidden;
+
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
@@ -32,12 +34,22 @@
             margin-left: 32px;
         }
 
-        p {
-            @extend %text24-700;
-            color: white;
-            opacity: 0;
+        &__text {
+            position: absolute;
+            top: 110px;
 
-            transition: opacity 0.3s;
+            transition: top 0.3s;
+
+            &__header {
+                @extend %text24-700;
+                color: white;
+            }
+
+            &__info {
+                margin-top: 20px;
+                @extend %text16-400;
+                color: white;
+            }
         }
 
         img {
@@ -54,8 +66,8 @@
         }
 
         &:hover {
-            p {
-                opacity: 1;
+            .advantages-item__text {
+                top: 5px;
             }
         }
     }
@@ -82,8 +94,25 @@
                 margin-left: 0;
             }
 
-            p {
-                opacity: 1;
+            &__text {
+                position: static;
+                margin-top: auto;
+
+                &__header {
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+
+                &__info {
+                    display: none;
+                }
+            }
+
+            &:hover {
+                .advantages-item__text {
+                    top: auto;
+                }
             }
         }
     }

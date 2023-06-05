@@ -20,6 +20,10 @@ import "IMAGES/frontpad.png";
 import "IMAGES/sclad.png";
 import "IMAGES/main.png";
 import "IMAGES/logo.svg";
+import "IMAGES/01.png";
+import "IMAGES/02.png";
+import "IMAGES/03.png";
+import "IMAGES/04.png";
 
 import "ICONS/check.svg";
 import "ICONS/select-arrow.svg";
