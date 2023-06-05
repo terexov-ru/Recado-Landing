@@ -120,6 +120,26 @@
     }
 }
 
+@media screen and (max-width: 800px) {
+    .feedback-form {
+        margin-top: 10px;
+        &__form {
+            padding: 30px 20px 30px;
+        }
+
+        &__img {
+            width: 250px;
+            height: 240px;
+            flex-shrink: 0;
+            margin-right: 10px;
+        }
+    }
+
+    .feedback-form-second {
+        margin-top: 65px;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .feedback-form {
         margin-top: 30px;
