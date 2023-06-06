@@ -22,12 +22,12 @@
             <section class="main-banner">
                 <div class="main-banner__info">
                     <h1>Помогаем ресторанам зарабатывать больше</h1>
-                    <h4>Быстрый и удобный сайт для доставки и самовывоза, который увеличивает выручку до 50%</h4>
+                    <h4>Удобный сайт с системой управления заказами для доставки и самовывоза.<br>Подключи и ощути рост выручки до&nbsp;50%</h4>
                     <img class="main-banner__info__img" src="resourses/main.png" alt="main image">
                     <a class="main-banner__launch" href="#feedback">Запустить бесплатно</a>
                     <a class="main-banner__demo" href="#">Посмотреть демо</a>
                 </div>
-                <img class="main-banner__img" src="resourses/main.png" alt="main image">
+                <div class="main-banner__img"><img src="resourses/main.png" alt="main image"></div>
             </section>
             <section class="advantages" id="advantages">
                 <h2>С rekado вы сможете</h2>
