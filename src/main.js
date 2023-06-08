@@ -103,6 +103,13 @@ document.addEventListener("DOMContentLoaded", function () {
       $(e.target).closest(".hint-block").toggleClass("show");
     });
 
+    window.addEventListener("click", (e) => {
+      let target = e.target;
+      if (!target.closest(".js-hint-icon")) {
+        $(".hint-block").removeClass("show");
+      }
+    });
+
     $(".rate-item__advantages-header").on("click", (e) => {
       $(e.target).closest(".rate-item__advantages-header").toggleClass("show");
       $(e.target)
