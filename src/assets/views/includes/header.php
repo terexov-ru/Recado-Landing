@@ -70,7 +70,7 @@
                     <span>En</span>
                 </a>
             </div>
-            <a class="header__btn" href="#feedback">Запустить бесплатно</a>
+            <a class="header__btn js-show-form">Запустить бесплатно</a>
         </div>
     </div>
 </header>

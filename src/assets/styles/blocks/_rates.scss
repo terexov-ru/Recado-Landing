@@ -22,9 +22,30 @@
         max-width: 384px;
         width: 100%;
 
+        &__header {
+            display: flex;
+            align-items: center;
+
+            svg {
+                margin-left: 8px;
+            }
+        }
+
+        &__subheader {
+            margin-top: 4px;
+
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+
+            color: black;
+        }
+
         &__name {
             @extend %text36-700;
-            color: $text-color;
+            color: black;
 
             span {
                 display: none;
@@ -35,14 +56,23 @@
             margin-top: 32px;
 
             @extend %text36-700;
-            font-weight: 500;
+            font-weight: 600;
             font-size: 30px;
             line-height: 38px;
         }
 
-        &__part {
+        &__part-container {
             margin-top: 4px;
 
+            display: flex;
+            align-items: center;
+
+            .hint-block {
+                margin-left: 7px;
+            }
+        }
+
+        &__part {
             @extend %text16-500;
         }
 
@@ -52,16 +82,36 @@
             margin-top: 16px;
         }
 
+        &__advantages-header {
+            margin-top: 32px;
+
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 28px;
+            color: #1c212b;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            svg {
+                display: none;
+            }
+        }
+
         &__advantage {
             display: flex;
 
             margin-top: 16px;
 
-            &:first-of-type {
-                margin-top: 32px;
+            p {
+                margin-left: 8px;
             }
 
-            p {
+            .hint-block {
+                flex-shrink: 0;
                 margin-left: 8px;
             }
 
@@ -73,10 +123,15 @@
         &.favorite {
             border-color: $secondary;
 
-            .rate-item__name {
+            .rate-item__header {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+
+                > div {
+                    display: flex;
+                    align-items: center;
+                }
 
                 span {
                     display: block;
@@ -88,6 +143,56 @@
                     @extend %text16-400;
                     color: $secondary;
                 }
+            }
+        }
+    }
+}
+
+.hint-block {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+        cursor: pointer;
+    }
+
+    &__content {
+        position: absolute;
+
+        opacity: 0;
+        visibility: hidden;
+
+        width: 300px;
+
+        right: 50%;
+        transform: translateX(50%);
+
+        bottom: 32px;
+
+        background-color: #f3f4f7;
+        border: 1px solid #d0d4dc;
+        border-radius: 8px;
+
+        padding: 12px;
+
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+
+        color: #000000;
+
+        transition: opacity 0.3s, visibility 0.3s;
+    }
+
+    &.desc {
+        &:hover {
+            .hint-block__content {
+                opacity: 1;
+                visibility: visible;
             }
         }
     }
@@ -140,9 +245,7 @@
             margin-top: 35px;
 
             display: flex;
-            justify-content: space-between;
-
-            overflow-x: scroll;
+            flex-direction: column;
 
             padding-bottom: 0;
 
@@ -164,17 +267,54 @@
         }
 
         .rate-item {
-            padding: 30px 10px 32px;
+            padding: 15px;
 
             border-radius: 10px;
 
-            min-width: 226px;
-            max-width: 226px;
+            min-width: 0;
+            max-width: none;
+
+            width: 100%;
 
             flex-shrink: 0;
 
             &:not(:first-child) {
-                margin-left: 9px;
+                margin-left: 0;
+                margin-top: 16px;
+            }
+
+            &__subheader {
+                margin-top: 8px;
+
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+            }
+
+            &__part-container {
+                align-items: flex-start;
+            }
+
+            .hint-block {
+                margin-left: 4px;
+
+                &__content {
+                    width: fit-content;
+                    min-width: 240px;
+                    max-width: 280px;
+
+                    bottom: 28px;
+
+                    font-size: 14px;
+                    line-height: 16px;
+                }
+
+                &.show {
+                    .hint-block__content {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
             }
 
             &__name {
@@ -183,24 +323,49 @@
             }
 
             &__price {
-                margin-top: 20px;
+                margin-top: 12px;
 
                 font-size: 24px;
-                line-height: 30px;
+                line-height: 100%;
             }
 
             &__part {
-                margin-top: 4px;
-
-                font-size: 16px;
-                line-height: 22px;
+                font-size: 14px;
+                line-height: 20px;
             }
 
             &__btn {
-                margin-top: 13px;
+                margin-top: 16px;
 
                 span {
                     display: none;
+                }
+            }
+
+            &__advantages-header {
+                margin-top: 16px;
+
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                svg {
+                    display: block;
+
+                    transition: transform 0.3s;
+                }
+
+                &.show {
+                    svg {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+
+            &__advantages-container {
+                display: none;
+
+                &.show {
+                    display: block;
                 }
             }
 
@@ -210,13 +375,13 @@
                 margin-top: 8px;
 
                 svg {
-                    width: 18px;
-                    height: 18px;
+                    width: 24px;
+                    height: 24px;
                     flex-shrink: 0;
                     margin-top: 0;
 
                     path {
-                        stroke-width: 1.5;
+                        stroke-width: 2;
                     }
                 }
 
@@ -227,8 +392,15 @@
                 p {
                     margin-left: 8px;
                     font-weight: 400;
-                    font-size: 12px;
-                    line-height: 18px;
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+
+                .hint-block {
+                    &__content {
+                        transform: translateX(0);
+                        right: 0;
+                    }
                 }
             }
 

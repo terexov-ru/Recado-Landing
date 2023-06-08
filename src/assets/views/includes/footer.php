@@ -33,8 +33,7 @@
             </div>
             <div class="footer__info">
                 <p>© 2023 rekado</p>
-                <a href="#">Условия оказания услуг</a>
-                <a href="#">Лицензии</a>
+                <a class="js-show-terms">Политика конфиденциальности</a>
             </div>
             <a class="footer__phone" href="tel:+79062504441">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

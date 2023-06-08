@@ -1,0 +1,69 @@
+.popup-wrapper {
+    .popup-container {
+        &__content {
+            margin-top: 40px;
+            h2 {
+                font-size: 24px;
+                line-height: 30px;
+
+                text-align: left;
+            }
+
+            p {
+                margin-top: 20px;
+
+                font-size: 14px;
+                line-height: 20px;
+
+                text-align: left;
+            }
+        }
+    }
+
+    .popup-header {
+        padding: 12px 0;
+    }
+    .popup-block {
+    }
+}
+
+.form {
+    padding-bottom: 200px;
+    h2 {
+        text-align: left;
+    }
+    &__subheader {
+        margin-top: 12px;
+
+        text-align: left;
+    }
+
+    form {
+        max-width: none;
+        width: 100%;
+        margin: 16px auto 0;
+
+        .form-send-btn {
+            margin-top: 16px;
+        }
+
+        .text {
+            margin-top: 10px;
+
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 18px;
+            a {
+                text-decoration: underline;
+
+                transition: color 0.3s;
+
+                cursor: pointer;
+
+                &:hover {
+                    color: $secondary;
+                }
+            }
+        }
+    }
+}

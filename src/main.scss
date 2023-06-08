@@ -17,6 +17,8 @@
 @import "STYLES/header/_header.scss";
 @import "STYLES/footer/_footer.scss";
 
+@import "STYLES/popup/_popup.scss";
+
 @import "STYLES/blocks/_main-banner.scss";
 @import "STYLES/blocks/_advantages.scss";
 @import "STYLES/blocks/_partners.scss";
@@ -51,4 +53,5 @@
     @import "STYLES/variables/_fonts-600.scss";
     @import "STYLES/header/_header_600.scss";
     @import "STYLES/footer/_footer_600.scss";
+    @import "STYLES/popup/_popup_600.scss";
 }

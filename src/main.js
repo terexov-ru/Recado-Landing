@@ -31,6 +31,8 @@ import "ICONS/option1.svg";
 import "ICONS/option2.svg";
 import "ICONS/option3.svg";
 import "ICONS/option4.svg";
+import "ICONS/option5.svg";
+import "ICONS/option6.svg";
 import "ICONS/logo_white.svg";
 
 import "SCRIPTS/validate.js";
@@ -38,6 +40,43 @@ import "SCRIPTS/scrollbar.js";
 import "SCRIPTS/select.js";
 
 document.addEventListener("DOMContentLoaded", function () {
+  let scroll = 0;
+
+  function showPopup($popup) {
+    scroll = $(window).scrollTop();
+    $popup.addClass("popup-shown");
+    $(".header").addClass("hidden");
+    $(".main").addClass("hidden");
+    $(".footer").addClass("hidden");
+    $("body,html").animate({ scrollTop: 0 }, 400);
+    console.log(scroll);
+  }
+
+  function hidePopup($popup) {
+    $popup.removeClass("popup-shown");
+    $(".header").removeClass("hidden");
+    $(".main").removeClass("hidden");
+    $(".footer").removeClass("hidden");
+    $(window).scrollTop(scroll);
+  }
+
+  $(".js-show-form").on("click", () => {
+    showPopup($(".form-wrapper"));
+  });
+
+  $(".js-show-terms").on("click", () => {
+    showPopup($(".terms-wrapper"));
+  });
+
+  $(".js-inner-show-terms").on("click", () => {
+    hidePopup($(".form-wrapper"));
+    showPopup($(".terms-wrapper"));
+  });
+
+  $(".popup-container__cross-block").on("click", (e) => {
+    hidePopup($(e.target).closest(".popup-wrapper"));
+  });
+
   $(".burger").on("click", () => {
     $(".header").toggleClass("menu-active");
   });
@@ -56,6 +95,20 @@ document.addEventListener("DOMContentLoaded", function () {
       if (!target.closest(".header__language")) {
         $(".header__language").removeClass("show");
       }
+    });
+  } else {
+    $(".hint-block").removeClass("desc");
+
+    $(".js-hint-icon").on("click", (e) => {
+      $(e.target).closest(".hint-block").toggleClass("show");
+    });
+
+    $(".rate-item__advantages-header").on("click", (e) => {
+      $(e.target).closest(".rate-item__advantages-header").toggleClass("show");
+      $(e.target)
+        .closest(".rate-item__advantages-header")
+        .next()
+        .toggleClass("show");
     });
   }
 });

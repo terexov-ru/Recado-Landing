@@ -113,14 +113,16 @@
                 justify-content: space-between;
                 align-items: center;
 
-                border-top: 1px solid #8397bf;
+                border-top: 1px solid #d0d4dc;
 
                 cursor: pointer;
 
                 p {
+                    font-family: "Inter";
+                    font-style: normal;
                     font-weight: 600;
-                    font-size: 14px;
-                    line-height: 20px;
+                    font-size: 16px !important;
+                    line-height: 24px !important;
                 }
 
                 svg {
@@ -132,7 +134,7 @@
             }
 
             &__answer {
-                border-top: 1px solid #8397bf;
+                border-top: 1px solid #d0d4dc;
                 padding: 10px;
 
                 opacity: 0;
@@ -140,16 +142,20 @@
                 display: none;
                 overflow: hidden;
 
+                font-family: "Inter";
+                font-style: normal;
                 font-weight: 400;
-                font-size: 12px;
+                font-size: 14px;
                 line-height: 18px;
+
+                color: #1c212b;
 
                 transition: max-height 0.3s;
             }
 
             &:last-child {
                 .question-item__question {
-                    border-bottom: 1px solid #8397bf;
+                    border-bottom: 1px solid #d0d4dc;
                 }
             }
 
