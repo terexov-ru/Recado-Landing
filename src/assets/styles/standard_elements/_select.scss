@@ -7,7 +7,7 @@
 
   white-space: nowrap;
 
-  @extend %text14-400;
+  @extend %input-font;
 
   .select {
     display: block;
@@ -31,7 +31,7 @@
 
     border-right: 1px solid #8397bf;
 
-    height: 47px;
+    height: 49px;
   }
 
   .new-select__list {
