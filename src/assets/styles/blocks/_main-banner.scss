@@ -50,6 +50,8 @@
     }
 
     &__demo {
+        visibility: collapse;
+
         margin-top: 16px;
 
         @extend %btn;
