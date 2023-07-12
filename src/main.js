@@ -24,6 +24,7 @@ import "IMAGES/04.png";
 import "IMAGES/sklad.svg";
 import "IMAGES/frontpad.svg";
 import "IMAGES/iiko.svg";
+import "IMAGES/login.webp";
 
 import "ICONS/check.svg";
 import "ICONS/select-arrow.svg";
@@ -38,6 +39,8 @@ import "ICONS/logo_white.svg";
 import "SCRIPTS/validate.js";
 import "SCRIPTS/scrollbar.js";
 import "SCRIPTS/select.js";
+import "SCRIPTS/password.js";
+import "SCRIPTS/login.js";
 
 document.addEventListener("DOMContentLoaded", function () {
   let scroll = 0;

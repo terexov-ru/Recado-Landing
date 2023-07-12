@@ -1,0 +1,178 @@
+.login {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    max-height: 100vh;
+    overflow-y: hidden;
+
+    &__info {
+        margin: 30px 0 0 60px;
+    }
+
+    &__logo {
+        display: block;
+        width: 175px;
+        height: 72px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    &__form {
+        margin: 0 auto 0;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: calc(100% - 80px);
+        max-width: 435px;
+        width: 100%;
+
+        &__content {
+            padding: 0 13.5px;
+            margin-top: 40px;
+        }
+    }
+
+    &__header {
+        color: $text-color;
+        font-family: "Inter", sans-serif;
+        text-align: center;
+        font-size: 30px;
+        line-height: 30px;
+        font-weight: 800;
+        letter-spacing: 0.00001em;
+    }
+
+    &__input {
+        @include text-input($text-color, #a1a8b5, (18px 24px), #97999a66, 10px, $text-color, none, 8px);
+
+        margin-top: 10px;
+
+        font-size: 18px !important;
+        line-height: 24px !important;
+
+        &:first-of-type {
+            margin-top: 0;
+        }
+
+        .show-password {
+            position: absolute;
+
+            top: 50%;
+            transform: translateY(-50%);
+            right: 8px;
+
+            cursor: pointer;
+
+            path {
+                fill: $text-color;
+
+                transition: fill 0.3s;
+            }
+
+            &:hover {
+                path {
+                    fill: $secondary;
+                }
+            }
+
+            &.password-shown {
+                path {
+                    fill: $secondary;
+                }
+            }
+        }
+    }
+
+    .errors-container {
+        margin-top: 10px;
+
+        .error-text {
+            @extend %text16-400;
+            color: rgb(221, 0, 0);
+        }
+
+        transition: opacity 0.3s;
+
+        opacity: 0;
+
+        &.showed {
+            opacity: 1;
+        }
+    }
+
+    &__btn {
+        @extend %btn;
+        padding: 18px 0;
+        margin-top: 10px;
+    }
+
+    &__subtext {
+        margin-top: 20px;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+        text-align: center;
+
+        margin-top: 20px;
+        margin-bottom: 20%;
+        a {
+            color: #0658f6;
+
+            transition: color 0.3s;
+
+            &:hover {
+                color: #002c83;
+            }
+        }
+    }
+
+    &__img-container {
+        height: 100%;
+        max-height: 100vh;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center 30%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .login {
+        grid-template-columns: 1fr;
+
+        &__img-container {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .login {
+        &__logo {
+            width: 140px;
+        }
+        &__header {
+            font-size: 22px !important;
+            line-height: 28px !important;
+        }
+
+        &__info {
+            margin: 20px 16px 0;
+        }
+
+        &__form {
+            &__content {
+                padding: 0;
+                margin-top: 40px;
+            }
+        }
+    }
+}
